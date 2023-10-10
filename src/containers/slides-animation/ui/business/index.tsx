@@ -23,9 +23,7 @@ export const BusinessSlide = () => {
           ))}
         </Middle>
         <Bottom>
-          <Figur
-            datas={{ width: "100%", height: "100%", color: "lightblue", type: "line" }}
-          />
+          <Figur datas={{ width: "100%", height: "100%", type: "line" }} />
         </Bottom>
       </MainColumnLayout>
     </SlideContainerLayout>

@@ -29,7 +29,6 @@ const Scondary = ({ data }: { data: any }) => {
             icon={<FiGithub />}
             url={links.github}
             size="small"
-            type="white"
             sm={`${title} - github`}
           />
           {links.website && (
@@ -37,7 +36,6 @@ const Scondary = ({ data }: { data: any }) => {
               icon={<FiExternalLink />}
               url={links.website}
               size="small"
-              type="white"
               sm={`${title} - link`}
             />
           )}

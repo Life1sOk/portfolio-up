@@ -40,7 +40,6 @@ const ECommerce = () => {
                     type: "line",
                     width: "100%",
                     height: "80%",
-                    color: "lightblue",
                   }}
                 />
                 <BoxContainerBot>
@@ -49,7 +48,6 @@ const ECommerce = () => {
                       type: "line",
                       width: "100%",
                       height: "100%",
-                      color: "lightblue",
                     }}
                   />
                   <Figur
@@ -57,7 +55,6 @@ const ECommerce = () => {
                       type: "line",
                       width: "100%",
                       height: "100%",
-                      color: "lightblue",
                     }}
                   />
                 </BoxContainerBot>

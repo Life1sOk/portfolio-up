@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 
 import { exoTwo } from "@components/app/fonts";
 
-import { locationBasics } from "@components/utils/social-media";
+import { locationBasics } from "../../app/consts";
 
 import Button from "@components/shared/button";
 import Mailto from "@components/shared/mail-to";

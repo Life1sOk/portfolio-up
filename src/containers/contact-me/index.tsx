@@ -2,7 +2,7 @@ import React from "react";
 
 import { useTranslation } from "react-i18next";
 
-import { locationBasics, socialMedia } from "./consts";
+import { locationBasics, socialMedia } from "../../app/consts";
 
 import Mailto from "@components/shared/mail-to";
 import Button from "@components/shared/button";

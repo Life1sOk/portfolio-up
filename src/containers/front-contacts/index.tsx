@@ -1,4 +1,4 @@
-import { locationBasics, socialMedia } from "../../utils/social-media";
+import { locationBasics, socialMedia } from "../../app/consts";
 
 import Mailto from "@components/shared/mail-to";
 import IconSocial from "@components/shared/icon-social";
