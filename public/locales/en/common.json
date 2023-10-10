@@ -1,0 +1,79 @@
+{
+  "welcome": {
+    "hello": "Hi, my name is",
+    "name": "Andrey Tsoy",
+    "do": "Web developer",
+    "about": "I am passionate about creating innovative digital projects. My main goal is to develop attractive web interfaces and enhance user experience.",
+    "call": "Let's create something unique together!"
+  },
+  "about": {
+    "title": "About me:",
+    "part1": "I am a front-end developer with over 1.5 years of experience. I am proficient in the essential skills required for development (HTML, CSS, JavaScript). My main tech stack includes React.js, Redux, TypeScript, and Styled Components.",
+    "part2": "In addition, I possess expertise in backend development. I leverage Node.js to create servers and handle CRUD operations. When it comes to databases, I utilize PostgreSQL and Redis, empowering me to efficiently manage data with flexibility.",
+    "part3": "While I currently identify myself as a front-end developer, I am improving my front-end and back-end development skills to enhance and broaden my capabilities."
+  },
+  "tools": { "title": "Tools" },
+  "projects": {
+    "title": "Projects",
+    "titleSmall": "Other projects",
+    "big": {
+      "project1": { "title": "Kleo4you", "description": "" },
+      "project2": {
+        "title": "Link saver",
+        "description": "An application for saving useful links with the ability to create groups and categorize them based on different 'topics'. It assists in managing a large number of links and saving them for the future."
+      },
+      "project3": {
+        "title": "Personal portfolio",
+        "description": "My personally designed website showcases my projects. You can also learn more about me, my professional skills, and get in touch with me."
+      }
+    },
+    "small": {
+      "project1": {
+        "title": "Small in one",
+        "description": "A platform for visual representation of my small projects on a web page to track progress."
+      },
+      "project2": {
+        "title": "Test Unistory",
+        "description": "The test includes interesting planet animation (attracting to the cursor), API requests, data loading on scroll, and more."
+      },
+      "project3": {
+        "title": "Quote generator",
+        "description": "A simple quote generator where you can search for interesting quotes for yourself."
+      },
+      "project4": {
+        "title": "Robo friends",
+        "description": "A small project with an API request and filtering of a robot (friends) list."
+      },
+      "project5": {
+        "title": "Background generator",
+        "description": "This is the first project that generates a simple background using two colors. It is useful for finding a gradient."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "project1": { "title": "Learning" }
+  },
+  "footer": {
+    "title": "Get In Touch",
+    "lastDance": {
+      "part1": "I'm always open to new opportunities and collaborations."
+    }
+  },
+  "others": {
+    "nav": {
+      "one": "About",
+      "two": "Tools",
+      "three": "Experience",
+      "four": "Projects",
+      "five": "Contact"
+    },
+    "status": {
+      "title": "Status",
+      "position": "Position",
+      "start": "Start",
+      "end": "End"
+    },
+    "buttons": { "mail": "Mail me!", "resume": "Resume" }
+  }
+}
