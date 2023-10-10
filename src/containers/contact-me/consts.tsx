@@ -1,8 +1,6 @@
-import React from "react";
+import { FiGithub } from "react-icons/fi";
 
-import { FiExternalLink, FiGithub } from "react-icons/fi";
-
-import { TbBrandTelegram, TbBrandFacebook, TbBrandWhatsapp } from "react-icons/tb";
+import { TbBrandTelegram, TbBrandWhatsapp } from "react-icons/tb";
 
 export const socialMedia = [
   {
@@ -26,9 +24,4 @@ export const locationBasics = {
   email: "andreytsoy.webdev@gmail.com",
   number: "+77056187051",
   location: "Kazakhstan, Almaty",
-};
-
-export const socialIcons = {
-  github: <FiGithub />,
-  view: <FiExternalLink />,
 };

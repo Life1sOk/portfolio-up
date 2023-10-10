@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 
-import { socialIcons } from "../../../../utils/social-media";
+import { socialIcons } from "./consts";
 
 import Paragraph from "@components/shared/paragraph";
 import IconSocial from "@components/shared/icon-social";
