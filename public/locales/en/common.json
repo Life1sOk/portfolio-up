@@ -7,7 +7,7 @@
     "call": "Let's create something unique together!"
   },
   "about": {
-    "title": "About me:",
+    "title": "About me",
     "part1": "I am a front-end developer with over 1.5 years of experience. I am proficient in the essential skills required for development (HTML, CSS, JavaScript). My main tech stack includes React.js, Redux, TypeScript, and Styled Components.",
     "part2": "In addition, I possess expertise in backend development. I leverage Node.js to create servers and handle CRUD operations. When it comes to databases, I utilize PostgreSQL and Redis, empowering me to efficiently manage data with flexibility.",
     "part3": "While I currently identify myself as a front-end developer, I am improving my front-end and back-end development skills to enhance and broaden my capabilities."
