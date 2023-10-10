@@ -4,7 +4,7 @@ export const ContactMeStyle = styled.div`
   width: 100%;
   max-width: 555px;
 
-  font-size: 15px;
+  font-size: var(--font-basic);
 
   display: flex;
   flex-direction: column;

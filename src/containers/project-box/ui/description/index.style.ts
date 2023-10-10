@@ -20,9 +20,9 @@ export const DescriptionUiStyle = styled.div`
 export const Main = styled.div`
   width: 100%;
   height: fit-content;
-  padding: 12px;
+  padding: 12px 18px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: var(--font-basic);
 
   border-radius: 10px;
   background-color: ${({ theme }) => theme.background.secondary};
@@ -60,4 +60,8 @@ export const Title = styled.h3`
   margin: 0 7px 10px 0;
   padding-left: 10px;
   text-align: left;
+
+  @media only screen and (max-width: 507px) {
+    font-size: 17px;
+  }
 `;

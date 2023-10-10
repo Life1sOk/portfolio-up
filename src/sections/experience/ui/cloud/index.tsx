@@ -18,7 +18,14 @@ const Cloud = ({ position, start, end }: IComponent) => {
       <CloudBall />
       <CloudSmall />
       <MainWrapper>
-        <Space title={t("others.status.position")} desc={<span>{position}</span>} />
+        <Space
+          title={t("others.status.position")}
+          desc={
+            <span>
+              <strong>{position}</strong>
+            </span>
+          }
+        />
         <Space title={t("others.status.start")} desc={<span>{start}</span>} />
         <Space
           title={t("others.status.end")}

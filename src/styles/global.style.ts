@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.color.main};
     background-color: ${({ theme }) => theme.background.main};
     scroll-behavior: smooth;
+    font-weight: 500;
   }
 
   ol,ul {
@@ -28,25 +29,11 @@ const GlobalStyle = createGlobalStyle`
 
   
   :root {
-    // Colors
-    --white: #ffffff;
-    --blue: #40578f;
-    --font-color: rgb(199, 207, 237);
-    --light-orange: #e55f3f;
-    --light-yellow: #f1a845;
-    --background: #001528;
-    --background-secondary: #011a31;
-    --dark-background: #000e1b;
-    --light-background: green;
-
     /* Size */
-    --font-small: 11px;
-    --font-mini: 12px;
-    --font-mid: 13px;
-    --font-basic: 14px;
-    --font-big: 15px;
-    --font-large: 16px;
-    --font-huge: 17px;
+    --font-large: clamp(33px, 7vw, 56px);
+    --font-big: clamp(23px, 5vw, 40px);
+    --font-middle: clamp(14px, 3vw, 16px);
+    --font-basic: clamp(13px, 3vw, 15px);
 
     /* Weight */
     --font-weight-normal: 500;

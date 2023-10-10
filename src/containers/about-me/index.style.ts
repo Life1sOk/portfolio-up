@@ -9,6 +9,7 @@ export const AboutMeStyle = styled.div`
   gap: 20px;
 
   font-size: 15px;
+  font-size: var(--font-basic);
   line-height: 1.6;
   font-weight: 500;
 

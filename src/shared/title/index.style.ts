@@ -7,6 +7,7 @@ export const TitleStyle = styled.div<{ procent?: number }>`
   margin-bottom: 40px;
 
   font-size: 33px;
+  font-size: clamp(23px, 5vw, 33px);
   font-weight: 600;
   color: ${({ theme }) => theme.title.main};
   white-space: nowrap;
@@ -24,13 +25,18 @@ export const TitleStyle = styled.div<{ procent?: number }>`
   }
 
   @media only screen and (max-width: 599px) {
-    font-size: 29px;
+    /* font-size: 24px; */
+    margin-bottom: 30px;
   }
 `;
 
-export const TitleNumber = styled.h2`
+export const TitleNumber = styled.h3`
   width: fit-content;
   color: ${({ theme }) => theme.title.secondary};
   font-size: 25px;
-  margin-top: 5px;
+  font-size: clamp(15px, 4vw, 25px);
+
+  @media only screen and (max-width: 599px) {
+    /* font-size: 20px; */
+  }
 `;

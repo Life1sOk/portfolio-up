@@ -24,10 +24,11 @@ export const WelcomeStyle = styled.div`
   }
 `;
 
-export const HelloTitle = styled.h1`
-  font-size: 16px;
+export const HelloTitle = styled.p`
+  font-size: var(--font-middle);
   color: ${({ theme }) => theme.title.main};
   margin-bottom: 20px;
+  font-weight: 700;
 `;
 
 export const TextStyle = styled.div`
@@ -35,23 +36,19 @@ export const TextStyle = styled.div`
   margin-bottom: 30px;
 `;
 
-export const MyName = styled.h2`
-  font-size: 56px;
+export const MyName = styled.h1`
+  font-size: var(--font-large);
 
-  @media only screen and (max-width: 599px) {
-    font-size: 44px;
+  @media only screen and (max-width: 509px) {
+    margin-bottom: 5px;
   }
 `;
 
 export const MyProf = styled.h3`
   max-width: 555px;
 
-  font-size: 40px;
+  font-size: var(--font-big);
   color: ${({ theme }) => theme.color.secondary};
-
-  @media only screen and (max-width: 599px) {
-    font-size: 33px;
-  }
 `;
 
 export const AboutStyle = styled.article`
@@ -62,13 +59,13 @@ export const AboutStyle = styled.article`
   max-width: 566px;
 
   color: ${({ theme }) => theme.color.secondary};
-  font-size: 15.5px;
+  font-size: var(--font-basic);
   line-height: 1.6;
 
   .acc {
     margin-top: 20px;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--font-middle);
+    font-weight: 700;
     color: ${({ theme }) => theme.title.main};
   }
 

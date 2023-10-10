@@ -6,7 +6,7 @@ export const SmallBoxStyle = styled.div`
   max-width: 371.55px;
   background-color: ${({ theme }) => theme.background.secondary};
   border-radius: 10px;
-  padding: 15px 10px;
+  padding: 15px 23px;
 `;
 
 export const BoxTop = styled.div`

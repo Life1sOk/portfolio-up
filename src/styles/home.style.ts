@@ -24,7 +24,11 @@ export const HomeContainer = styled.div`
     padding: 0 77px;
   }
 
-  @media only screen and (max-width: 599px) {
-    padding: 0 25px;
+  @media only screen and (max-width: 509px) {
+    padding: 0 45px;
+  }
+
+  @media only screen and (max-width: 409px) {
+    padding: 0 22px;
   }
 `;

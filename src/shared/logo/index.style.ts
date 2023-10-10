@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LogoStyle = styled.div`
-  width: 160px;
+  width: 130px;
 
   display: flex;
   align-items: center;
