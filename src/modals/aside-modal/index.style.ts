@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AsideModalStyle = styled.div<{ $status: boolean }>`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -12,6 +12,10 @@ export const AsideModalStyle = styled.div<{ $status: boolean }>`
 
   transform: ${({ $status }) => (!$status ? "translateX(100%)" : "translateX(0)")};
   transition: all 0.4s ease-in-out;
+
+  @media only screen and (min-width: 1044px) {
+    display: none;
+  }
 
   @media only screen and (min-width: 474px) {
     width: min(75vw, 400px);
@@ -30,4 +34,8 @@ export const BlackBox = styled.div`
   background-color: black;
   opacity: 0.4;
   z-index: 26;
+
+  @media only screen and (min-width: 1044px) {
+    display: none;
+  }
 `;

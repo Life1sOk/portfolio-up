@@ -6,13 +6,18 @@ import { useThemeHook } from "@components/app/theme/useTheme";
 
 import { ToggleStyle, InputStyle, LabelStyle } from "./index.style";
 
-const Toggle = () => {
+interface IComponenet {
+  toggleAction?: () => void;
+}
+
+const Toggle = ({ toggleAction }: IComponenet) => {
   const [isActive, setIsActive] = useState(true);
 
   const { current, toggleHandler } = useThemeHook();
 
   const handleChange = () => {
     if (toggleHandler) toggleHandler();
+    if (toggleAction) toggleAction();
   };
 
   useEffect(() => {

@@ -41,7 +41,7 @@ const MobileNavbar = ({ scrollHandler, openNavHandler }: IComponent) => {
       <TopStyle>
         <Translate type="row" toggleAction={toggleHandler} />
         <ToggleWrapper>
-          <Toggle />
+          <Toggle toggleAction={openNavHandler} />
         </ToggleWrapper>
       </TopStyle>
       <LinksWrapper>
