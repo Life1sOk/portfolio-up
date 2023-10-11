@@ -20,7 +20,7 @@ export const lightTheme = {
     front: "rgba(0, 0, 0, 0)",
     navigation: "0px 3px 5px 0px rgba(0, 0, 0, 0.2)",
     tools: "0px 3px 6px -1px rgba(0, 0, 0, 0.75)",
-    projects: "rgba(0, 0, 0, 0.3) 6px 14px 19px -10px",
+    projects: "rgba(0, 0, 0, 0.3) 0px 2px 25px -11px",
     exp: "rgb(0, 0, 0) 0px 17px 21px -13px",
     cube: "rgba(238, 111, 87, .5)",
   },

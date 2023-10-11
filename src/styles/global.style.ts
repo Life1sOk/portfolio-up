@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
     --font-large: clamp(33px, 7vw, 56px);
     --font-big: clamp(23px, 5vw, 40px);
     --font-middle: clamp(14px, 3vw, 16px);
-    --font-basic: clamp(13px, 3vw, 15px);
+    --font-basic: clamp(13px, 3vw, 14.5px);
 
     /* Weight */
     --font-weight-normal: 500;

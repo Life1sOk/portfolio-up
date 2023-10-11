@@ -6,7 +6,7 @@ export const DescriptionUiStyle = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 12px 23px 12px 0;
+  padding: 16px 23px 12px 0;
 
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ export const InfoWrapper = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 20px;
+  font-size: 18px;
   color: ${({ theme }) => theme.color.main};
   margin: 0 7px 10px 0;
   padding-left: 10px;
