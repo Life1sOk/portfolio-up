@@ -11,15 +11,17 @@ import GlobalStyle from "@components/styles/global.style";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeContextProvider>
-      <WithTheme>
-        <div className={inter.className}>
-          <GlobalStyle />
-          <Component {...pageProps} />
-          <Analytics />
-        </div>
-      </WithTheme>
-    </ThemeContextProvider>
+    <>
+      <ThemeContextProvider>
+        <WithTheme>
+          <div className={inter.className}>
+            <GlobalStyle />
+            <Component {...pageProps} />
+          </div>
+        </WithTheme>
+      </ThemeContextProvider>
+      <Analytics />
+    </>
   );
 };
 
