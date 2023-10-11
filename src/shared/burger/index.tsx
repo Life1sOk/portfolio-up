@@ -10,7 +10,7 @@ const Burger = ({ actionHandler, isOpen }: IComponent) => {
     <StyledBurger
       $open={isOpen}
       className="burger"
-      onClick={() => actionHandler(true)}
+      onClick={() => actionHandler(!isOpen)}
       title="burger"
     >
       <div className="line1" />
