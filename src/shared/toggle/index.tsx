@@ -1,4 +1,4 @@
-import { useState, useEffect, ChangeEvent } from "react";
+import { useState, useEffect, useId } from "react";
 
 import { TbSunHigh, TbMoon } from "react-icons/tb";
 
@@ -11,6 +11,8 @@ interface IComponenet {
 }
 
 const Toggle = ({ toggleAction }: IComponenet) => {
+  const uniqueId = useId();
+
   const [isActive, setIsActive] = useState(true);
 
   const { current, toggleHandler } = useThemeHook();
@@ -31,10 +33,10 @@ const Toggle = ({ toggleAction }: IComponenet) => {
         checked={isActive}
         type="checkbox"
         name="mode"
-        id="darkmode-toggle"
+        id={uniqueId}
         onChange={handleChange}
       />
-      <LabelStyle htmlFor="darkmode-toggle">
+      <LabelStyle htmlFor={uniqueId}>
         <TbSunHigh title="sun" className="sun" />
         <TbMoon title="moon" className="moon" />
       </LabelStyle>

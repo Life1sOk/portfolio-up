@@ -44,7 +44,7 @@ export const MyName = styled.h1`
   }
 `;
 
-export const MyProf = styled.h3`
+export const MyProf = styled.h2`
   max-width: 555px;
 
   font-size: var(--font-big);
