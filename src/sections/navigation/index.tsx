@@ -22,7 +22,7 @@ const NavigationSub = ({ scrollHandler }: IComponent) => {
 
   const navbarRef: RefObject<HTMLElement> = useRef(null);
 
-  const openNavHandler = () => setOpen(!open);
+  const openNavHandler = (data: boolean) => setOpen(data);
 
   useEffect(() => {
     let prevScrollpos = window.scrollY;

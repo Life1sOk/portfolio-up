@@ -4,7 +4,7 @@ import { AsideModalStyle, BlackBox } from "./index.style";
 
 interface IComponent {
   isOpen: boolean;
-  openHandler: () => void;
+  openHandler: (data: boolean) => void;
   children: React.ReactNode;
 }
 
@@ -21,7 +21,7 @@ const AsideModal = ({ isOpen, openHandler, children }: IComponent) => {
   return (
     <Fragment>
       <AsideModalStyle $status={isOpen}>{children}</AsideModalStyle>
-      {isOpen ? <BlackBox onClick={openHandler} /> : null}
+      {isOpen ? <BlackBox onClick={() => openHandler(false)} /> : null}
     </Fragment>
   );
 };

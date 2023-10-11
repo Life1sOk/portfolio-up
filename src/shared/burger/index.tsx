@@ -1,7 +1,7 @@
 import { StyledBurger } from "./index.style";
 
 interface IComponent {
-  actionHandler: () => void;
+  actionHandler: (data: boolean) => void;
   isOpen: boolean;
 }
 
@@ -10,7 +10,7 @@ const Burger = ({ actionHandler, isOpen }: IComponent) => {
     <StyledBurger
       $open={isOpen}
       className="burger"
-      onClick={actionHandler}
+      onClick={() => actionHandler(true)}
       title="burger"
     >
       <div className="line1" />

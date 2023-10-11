@@ -11,7 +11,14 @@ const AboutSub = forwardRef<HTMLElement>(function About(_, ref) {
     <MainAbout ref={ref}>
       <AboutMeContainer />
       <FotoWrapper>
-        <Image alt="My foto" src="/images/photo.webp" fill={true} />
+        <Image
+          alt="My personal photo"
+          src="/images/photo.webp"
+          width={300}
+          height={400}
+          quality={100}
+          priority
+        />
       </FotoWrapper>
     </MainAbout>
   );

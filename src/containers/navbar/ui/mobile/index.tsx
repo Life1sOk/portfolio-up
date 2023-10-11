@@ -19,7 +19,7 @@ import {
 
 interface IComponent {
   scrollHandler: (data: string) => void;
-  openNavHandler: () => void;
+  openNavHandler: (data: boolean) => void;
 }
 
 const MobileNavbar = ({ scrollHandler, openNavHandler }: IComponent) => {
@@ -28,7 +28,7 @@ const MobileNavbar = ({ scrollHandler, openNavHandler }: IComponent) => {
   const links = useGenerateLinks();
 
   const toggleHandler = () => {
-    if (openNavHandler) openNavHandler();
+    if (openNavHandler) openNavHandler(false);
   };
 
   const scrollAndOpenHandler = (link: string) => {

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { russoOne } from "@components/app/fonts";
+
 import { IconWrapContainer, IconWrap, NameFont } from "./index.style";
 
 interface IComponent {
@@ -11,7 +13,7 @@ const Icon = ({ icon, name }: IComponent) => {
   return (
     <IconWrapContainer>
       <IconWrap>{icon}</IconWrap>
-      <NameFont>{name}</NameFont>
+      <NameFont className={russoOne.className}>{name}</NameFont>
     </IconWrapContainer>
   );
 };

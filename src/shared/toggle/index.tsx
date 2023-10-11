@@ -7,7 +7,7 @@ import { useThemeHook } from "@components/app/theme/useTheme";
 import { ToggleStyle, InputStyle, LabelStyle } from "./index.style";
 
 interface IComponenet {
-  toggleAction?: () => void;
+  toggleAction?: (data: boolean) => void;
 }
 
 const Toggle = ({ toggleAction }: IComponenet) => {
@@ -17,7 +17,7 @@ const Toggle = ({ toggleAction }: IComponenet) => {
 
   const handleChange = () => {
     if (toggleHandler) toggleHandler();
-    if (toggleAction) toggleAction();
+    if (toggleAction) toggleAction(false);
   };
 
   useEffect(() => {

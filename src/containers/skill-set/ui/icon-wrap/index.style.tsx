@@ -11,7 +11,7 @@ export const IconWrapContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 9px;
+  gap: 11px;
 
   box-shadow: ${({ theme }) => theme.shadow.tools};
   -webkit-box-shadow: ${({ theme }) => theme.shadow.tools};
@@ -36,8 +36,8 @@ export const IconWrap = styled.div`
 `;
 
 export const NameFont = styled.span`
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 10.5px;
+  font-weight: 400;
   color: ${({ theme }) => theme.color.secondary};
 
   display: flex;
