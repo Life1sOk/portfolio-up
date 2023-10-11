@@ -1,4 +1,6 @@
 import type { AppProps } from "next/app";
+import { Analytics } from "@vercel/analytics/react";
+
 import { appWithTranslation } from "next-i18next";
 
 import { inter } from "@components/app/fonts";
@@ -14,6 +16,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <div className={inter.className}>
           <GlobalStyle />
           <Component {...pageProps} />
+          <Analytics />
         </div>
       </WithTheme>
     </ThemeContextProvider>
