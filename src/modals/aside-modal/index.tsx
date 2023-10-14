@@ -9,7 +9,6 @@ interface IComponent {
 }
 
 const AsideModal = ({ isOpen, openHandler, children }: IComponent) => {
-  // Prevent scroll content when aside menu is open
   useEffect(() => {
     if (isOpen) {
       window.document.body.style.overflow = "hidden";
