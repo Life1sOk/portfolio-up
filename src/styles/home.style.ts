@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HomeWrapper = styled.main`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: fit-content;
 
   overflow-x: hidden;
 `;

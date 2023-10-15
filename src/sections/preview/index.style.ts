@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const MainContainer = styled.section`
   width: 100%;
-  height: fit-content;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 565px;
 
   padding-top: 65.5px;
 

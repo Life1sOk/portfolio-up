@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const MobileNavbarStyle = styled.div`
-  min-width: 255px;
+  min-width: 320px;
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.background.main};
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const TopStyle = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 27% 63px 0 34px;
+  padding: 27px 63px 0 34px;
 
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ export const LinksWrapper = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 33px 22px;
+  padding: 17px 48px;
 
   display: flex;
   flex-direction: column;
@@ -41,7 +41,6 @@ export const LinksWrapper = styled.div`
 
 export const ButtonContainer = styled.div`
   width: 100%;
-  padding-bottom: 27%;
 
   display: flex;
   align-items: center;
@@ -50,7 +49,7 @@ export const ButtonContainer = styled.div`
 
 export const LinkWord = styled.div`
   font-size: 18px;
-  padding: 29px 28px;
+  padding: 25px 0;
   border-bottom: 1px solid transparent;
 
   display: flex;
@@ -75,5 +74,9 @@ export const LinkWord = styled.div`
     .link {
       color: ${({ theme }) => theme.color.main};
     }
+  }
+
+  @media only screen and (max-width: 700px) {
+    padding: 18px 0;
   }
 `;

@@ -9,7 +9,7 @@ import { top, bottom } from "./consts";
 
 const PersonalSlide = () => {
   return (
-    <SlideContainerLayout duration="1.5s">
+    <SlideContainerLayout $duration="1.5s">
       <TitleLayout>Personal</TitleLayout>
       <MainColumnLayout>
         <Top>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SlideContainerLayout = styled.div<{ duration?: string }>`
+export const SlideContainerLayout = styled.div<{ $duration?: string }>`
   width: 50%;
   aspect-ratio: 1/1;
   padding: 0 3px 3px 3px;
@@ -18,7 +18,7 @@ export const SlideContainerLayout = styled.div<{ duration?: string }>`
   align-items: flex-start;
 
   animation-name: slide;
-  animation-duration: ${({ duration }) => (duration ? duration : "2s")};
+  animation-duration: ${({ $duration }) => ($duration ? $duration : "2s")};
 
   @keyframes slide {
     from {

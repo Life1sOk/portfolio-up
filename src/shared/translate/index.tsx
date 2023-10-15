@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 import { useTranslation } from "next-i18next";
 
@@ -12,27 +12,22 @@ interface IComponent {
 const Translate = ({ type, toggleAction }: IComponent) => {
   const { i18n } = useTranslation("common");
 
-  const handleLngToggle = (data: "en" | "ru") => {
-    i18n.changeLanguage(data);
+  const handleLngToggle = () => {
     if (toggleAction) toggleAction();
   };
 
   return (
     <TranslateStyle type={type}>
-      <Picker
-        $state={!!(i18n.resolvedLanguage === "en")}
-        onClick={() => handleLngToggle("en")}
-        type={type}
-      >
-        en
-      </Picker>
-      <Picker
-        $state={!!(i18n.resolvedLanguage === "ru")}
-        onClick={() => handleLngToggle("ru")}
-        type={type}
-      >
-        ru
-      </Picker>
+      <Link href="/" locale="en" onClick={() => handleLngToggle()}>
+        <Picker $state={!!(i18n.resolvedLanguage === "en")} type={type}>
+          en
+        </Picker>
+      </Link>
+      <Link href="/ru" locale="ru" onClick={() => handleLngToggle()}>
+        <Picker $state={!!(i18n.resolvedLanguage === "ru")} type={type}>
+          ru
+        </Picker>
+      </Link>
     </TranslateStyle>
   );
 };
