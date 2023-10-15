@@ -9,7 +9,7 @@ import { top, middle } from "./consts";
 
 export const BusinessSlide = () => {
   return (
-    <SlideContainerLayout duration="0.5s">
+    <SlideContainerLayout $duration="0.5s">
       <TitleLayout>Business</TitleLayout>
       <MainColumnLayout>
         <Top>

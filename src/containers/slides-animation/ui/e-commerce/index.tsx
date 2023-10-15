@@ -18,7 +18,7 @@ const times = [1, 2, 3, 4, 5, 6];
 
 const ECommerce = () => {
   return (
-    <SlideContainerLayout duration="1s">
+    <SlideContainerLayout $duration="1s">
       <TitleLayout>eCommerce</TitleLayout>
       <MainColumnLayout>
         <Top>
