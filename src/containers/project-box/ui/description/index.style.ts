@@ -6,38 +6,32 @@ export const DescriptionUiStyle = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 16px 23px 12px 0;
+  padding: 0.75rem 1.375rem; /* 12px 22px converted to rem */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (max-width: 1044px) {
-    padding: 12px 23px;
+  @media only screen and (min-width: 1045px) {
+    padding: 1rem 1.4375rem 0.75rem 0;
   }
 `;
 
 export const Main = styled.div`
   width: 100%;
   height: fit-content;
-  padding: 12px 18px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem; /* 10px converted to rem */
   font-size: var(--font-basic);
-
-  border-radius: 10px;
-  background-color: ${({ theme }) => theme.background.secondary};
+  line-height: 1.6;
 
   & p {
     text-align: left;
-  }
-
-  @media only screen and (max-width: 410px) {
-    line-height: 1.6;
   }
 `;
 
 export const Links = styled.div`
   width: 100%;
+  margin-top: 0.3125rem; /* 5px converted to rem */
 
   display: flex;
   justify-content: flex-end;
@@ -46,22 +40,22 @@ export const Links = styled.div`
 export const InfoWrapper = styled.div`
   width: 100%;
 
-  padding: 7px 7px 7px 10px;
-  margin-bottom: 10px;
+  padding: 0.4375rem 0.4375rem 0.4375rem 0; /* 7px 7px 7px 0px converted to rem */
+  margin-bottom: 0.625rem; /* 10px converted to rem */
+  font-size: var(--font-small);
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem; /* 10px converted to rem */
 `;
 
 export const Title = styled.h3`
-  font-size: 18px;
+  font-size: 1.0625rem; /* 17px converted to rem */
   color: ${({ theme }) => theme.color.main};
-  margin: 0 7px 10px 0;
-  padding-left: 10px;
+  margin: 0 0.4375rem 0.625rem 0; /* 7px 10px converted to rem */
   text-align: left;
 
-  @media only screen and (max-width: 507px) {
-    font-size: 17px;
+  @media only screen and (min-width: 507px) {
+    font-size: 1.125rem; /* 18px converted to rem */
   }
 `;

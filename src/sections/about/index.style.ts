@@ -9,6 +9,7 @@ export const MainAbout = styled.section`
   align-items: center;
 
   @media only screen and (max-width: 1044px) {
+    padding: 85px 0;
     flex-direction: column;
     align-items: center;
     gap: 22px;
@@ -23,10 +24,8 @@ export const MainAbout = styled.section`
 export const FotoWrapper = styled.div`
   position: relative;
 
-  width: 55%;
-  min-width: 233px;
-  max-width: 300px;
-  aspect-ratio: 3 / 4;
+  width: 18.75rem;
+  height: 25rem;
   border-radius: 3px;
   overflow: hidden;
   margin-top: 3%;

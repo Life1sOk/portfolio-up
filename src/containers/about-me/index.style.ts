@@ -2,16 +2,12 @@ import styled from "styled-components";
 
 export const AboutMeStyle = styled.div`
   width: 100%;
-  border-radius: 10px;
+  font-size: var(--font-basic);
+  line-height: 1.6;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
-
-  font-size: 15px;
-  font-size: var(--font-basic);
-  line-height: 1.6;
-  font-weight: 500;
+  gap: 1.25rem;
 
   & p {
     text-align: left;
@@ -20,7 +16,7 @@ export const AboutMeStyle = styled.div`
 
 export const AboutWrapper = styled.div`
   width: 100%;
-  max-width: 521px;
+  max-width: 32.5625rem;
   height: fit-content;
 
   display: flex;

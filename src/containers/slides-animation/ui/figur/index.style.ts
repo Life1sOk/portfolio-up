@@ -5,9 +5,8 @@ import type { IFigure } from "../../types";
 export const FigurContainer = styled.div<IFigure>`
   width: ${({ width }) => (width ? width : "60%")};
   height: ${({ height }) => (height ? height : "20%")};
-  /* background-color: ${({ color }) => (color ? color : "white")}; */
   background-color: rgba(245, 254, 253, 1);
-  border-radius: ${({ radius }) => (radius ? radius : "7px")};
+  border-radius: ${({ radius }) => (radius ? radius : ".44rem")};
   animation-name: ${({ type }) =>
     type === "line" ? "line" : type === "box" ? "box" : "none"};
   animation-duration: 2.5s;

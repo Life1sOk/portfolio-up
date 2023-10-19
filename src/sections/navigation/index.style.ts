@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const NavigationContainer = styled.nav`
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 22;
 
   width: 100%;
-  min-width: 320px;
+  min-width: 20rem;
   background-color: ${({ theme }) => theme.background.main};
 
   display: flex;
@@ -21,11 +23,10 @@ export const NavigationContainer = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
-  min-width: 320px;
-  max-width: 1299.98px;
   width: 100%;
-  height: 65.5px;
-  padding: 0 44px;
+  max-width: 81.25rem;
+  height: 4.09rem;
+  padding: 0 2.75rem;
 
   display: flex;
   justify-content: space-between;

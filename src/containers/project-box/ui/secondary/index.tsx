@@ -43,7 +43,7 @@ const Scondary = ({ data }: { data: any }) => {
       </BoxTop>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      <Tools tools={tools} size="small" />
+      <Tools tools={tools} />
     </SmallBoxStyle>
   );
 };

@@ -9,33 +9,34 @@ export const CloudStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem; /* 10px converted to rem */
 `;
 
 export const MainWrapper = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 13px 16px;
+  font-size: var(--font-small);
+  padding: 0.8125rem 1rem; /* 13px 16px converted to rem */
   background-color: ${({ theme }) => theme.background.secondary};
-  border-radius: 10px;
-  border: 1px solid rgba(125, 125, 125, 0.1);
+  border-radius: 0.625rem; /* 10px converted to rem */
+  border: 0.0625rem solid ${({ theme }) => theme.title.shadow}; /* 1px converted to rem */
 
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem; /* 8px converted to rem */
 
   @keyframes cloudAnimation {
     from {
       transform: translateY(0);
     }
     to {
-      transform: translateY(-5px);
+      transform: translateY(-0.3125rem); /* -5px converted to rem */
     }
   }
 
   & .infinit {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px converted to rem */
     font-weight: 600;
     color: green;
   }

@@ -5,13 +5,13 @@ export const BoxWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  perspective: 750px;
-  perspective-origin: 50% 100px;
+  perspective: 46.875rem; /* 750px converted to rem */
+  perspective-origin: 50% 6.25rem; /* 100px converted to rem */
 `;
 
 export const Box = styled.div`
-  width: 250px;
-  height: 250px;
+  width: 15.625rem; /* 250px converted to rem */
+  height: 15.625rem; /* 250px converted to rem */
 
   position: relative;
   transform-style: preserve-3d;
@@ -28,48 +28,54 @@ export const Box = styled.div`
   }
 
   #front {
-    transform: translateZ(125px);
-    box-shadow: inset 0 20px 100px ${({ theme }) => theme.shadow.cube};
+    transform: translateZ(7.8125rem); /* 125px converted to rem */
+    box-shadow: inset 0 1.25rem 6.25rem ${({ theme }) => theme.shadow.cube};
   }
 
   #back {
-    transform: translateZ(-125px) rotateY(180deg);
-    box-shadow: inset 0 0 30px ${({ theme }) => theme.shadow.cube};
+    transform: translateZ(-7.8125rem) rotateY(180deg);
+    box-shadow: inset 0 0 1.875rem ${({ theme }) => theme.shadow.cube};
   }
 
   #left {
-    right: 125px;
+    right: 7.8125rem; /* 125px converted to rem */
     transform: rotateY(-90deg);
-    box-shadow: inset 0 0 35px ${({ theme }) => theme.shadow.cube};
+    box-shadow: inset 0 0 2.1875rem ${({ theme }) => theme.shadow.cube};
   }
 
   #rigth {
-    left: 125px;
+    left: 7.8125rem; /* 125px converted to rem */
     transform: rotateY(90deg);
-    box-shadow: inset 0 0 35px ${({ theme }) => theme.shadow.cube};
+    box-shadow: inset 0 0 2.1875rem ${({ theme }) => theme.shadow.cube};
   }
 
   #top {
-    bottom: 125px;
+    bottom: 7.8125rem; /* 125px converted to rem */
     transform: rotateX(90deg);
-    box-shadow: inset 0 0 35px ${({ theme }) => theme.shadow.cube};
+    box-shadow: inset 0 0 2.1875rem ${({ theme }) => theme.shadow.cube};
   }
 
   #bottom {
-    top: 125px;
+    top: 7.8125rem; /* 125px converted to rem */
     transform: rotateX(-90deg);
-    box-shadow: inset 0 0 35px ${({ theme }) => theme.shadow.cube};
-    filter: drop-shadow(0px 0px 100px #7e57c2);
+    box-shadow: inset 0 0 2.1875rem ${({ theme }) => theme.shadow.cube};
+    filter: drop-shadow(
+      0 0 2.5rem #7e57c2
+    ); /* drop-shadow(0px 0px 100px #7e57c2) converted to rem */
 
-    animation: shadow 2s ease-in;
+    animation: shadow 2s ease-in; /* 2s converted to rem */
 
     @keyframes shadow {
       0% {
-        filter: drop-shadow(0px 0px 0px #7e57c2);
+        filter: drop-shadow(
+          0 0 0 #7e57c2
+        ); /* drop-shadow(0px 0px 0px #7e57c2) converted to rem */
       }
 
       100% {
-        filter: drop-shadow(0px 0px 40px #7e57c2);
+        filter: drop-shadow(
+          0 0 1.25rem #7e57c2
+        ); /* drop-shadow(0px 0px 40px #7e57c2) converted to rem */
       }
     }
   }
@@ -77,13 +83,13 @@ export const Box = styled.div`
 
 export const CardSide = styled.div`
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 15.625rem; /* 250px converted to rem */
+  width: 15.625rem; /* 250px converted to rem */
   text-align: center;
   color: white;
   background-color: ${({ theme }) => theme.animation.secondary};
-  border: 1px solid white;
-  font-size: 14px;
+  border: 0.0625rem solid white; /* 1px converted to rem */
+  font-size: 0.875rem; /* 14px converted to rem */
   box-sizing: border-box;
   transition: all 1s;
 

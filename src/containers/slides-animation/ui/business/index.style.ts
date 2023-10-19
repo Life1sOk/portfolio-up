@@ -7,13 +7,12 @@ export const Top = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 6px;
+  gap: 14%;
 `;
 
 export const Middle = styled.div`
   width: 100%;
   height: 30%;
-  /* margin-top: 25px; */
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,5 +24,5 @@ export const Middle = styled.div`
 export const Bottom = styled.div`
   width: 100%;
   height: 20%;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
 `;

@@ -6,6 +6,10 @@ export const ProjectsContainer = styled.section`
 
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 1044px) {
+    padding: 85px 0;
+  }
 `;
 
 export const ProjectsStyle = styled.div`
@@ -20,14 +24,14 @@ export const SmallWrapper = styled.div`
 `;
 
 export const TitleSmall = styled.h2`
-  margin: 22px 0 33px 0;
-  font-size: 20px;
+  margin: 1.375rem 0 2.0625rem 0;
+  font-size: 1.25rem;
   color: ${({ theme }) => theme.color.secondary};
 `;
 
 export const SmallStyle = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(17.31rem, 1fr));
   justify-items: center;
-  gap: 18px;
+  gap: 1.125rem;
 `;

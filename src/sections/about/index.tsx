@@ -14,8 +14,7 @@ const AboutSub = forwardRef<HTMLElement>(function About(_, ref) {
         <Image
           alt="My personal photo"
           src="/images/photo.webp"
-          width={300}
-          height={400}
+          fill
           quality={100}
           priority
         />

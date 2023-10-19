@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-// import back from "../../assets/back1.webp";
-
 export const SlidesContainer = styled.div`
   position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 
   transform: rotate3d(0.1, -0.666, 0, 15deg) rotate(1deg);
   transform-style: preserve-3d;
@@ -20,7 +18,7 @@ export const SlidesWrapper = styled.div`
 
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25rem;
 
   animation-name: animationWindow;
   animation-duration: 2s;
@@ -48,9 +46,3 @@ export const BackCheck = styled.div`
 
   transform: rotate(45deg);
 `;
-
-/* 
-background: url(${back});
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat; */

@@ -1,17 +1,16 @@
 import React from "react";
 
-import { ToolsStyle, OneTool } from "./index.style";
+import { ToolsStyle } from "./index.style";
 
 interface IComponent {
   tools: string[];
-  size?: string;
 }
 
-const Tools = ({ tools, size }: IComponent) => {
+const Tools = ({ tools }: IComponent) => {
   return (
-    <ToolsStyle size={size}>
+    <ToolsStyle>
       {tools.map((tool, index) => (
-        <OneTool key={index}>{tool}</OneTool>
+        <li key={index}>{tool}</li>
       ))}
     </ToolsStyle>
   );

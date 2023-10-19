@@ -6,6 +6,7 @@ export const darkTheme = {
   title: {
     main: "rgba(241, 168, 69, 1)",
     secondary: "rgba(64, 87, 143, 1)",
+    shadow: "rgba(241, 168, 69, .5)",
   },
   color: {
     main: "rgba(245, 254, 253, 1)",

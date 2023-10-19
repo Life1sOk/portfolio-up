@@ -15,7 +15,7 @@ const ExperienceSub = forwardRef<HTMLElement>(function Skills(_, ref) {
 
   return (
     <ExperienceStyle ref={ref}>
-      <Title title={t("experience.title")} number={4} procent={44} />
+      <Title title={t("experience.title")} number={4} procent={70} />
       <FlagsWrapper>
         {data.map((point) => (
           <PointExperience data={point} key={point.company} />

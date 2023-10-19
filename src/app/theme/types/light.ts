@@ -6,6 +6,7 @@ export const lightTheme = {
   title: {
     main: "rgba(238, 111, 87, 1)",
     secondary: "rgba(143, 87, 64, 1)",
+    shadow: "rgba(238, 111, 87, .5)",
   },
   color: {
     main: "rgba(22, 20, 18, 1)",

@@ -4,12 +4,16 @@ export const ContactStyle = styled.section`
   position: relative;
 
   width: 100%;
-  height: 100vh;
+  height: 629px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (min-width: 666px) {
+    height: 100vh;
+  }
 `;
 
 export const Info = styled.div`
@@ -22,10 +26,4 @@ export const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  & p {
-    display: inline-block;
-    font-size: 10px;
-    padding: 5px;
-  }
 `;

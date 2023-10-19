@@ -4,7 +4,7 @@ export const IconSocialStyle = styled.a<{ size?: string }>`
   width: fit-content;
   height: fit-content;
 
-  padding: 7px;
+  padding: 0.4375rem; /* 7px converted to rem */
   color: ${({ theme }) => theme.color.secondary};
 
   display: flex;
@@ -13,9 +13,17 @@ export const IconSocialStyle = styled.a<{ size?: string }>`
 
   & svg {
     width: ${({ size }) =>
-      size === "small" ? "20px" : size === "normal" ? "24px" : "24px"};
+      size === "small"
+        ? "1.25rem"
+        : size === "normal"
+        ? "1.5rem"
+        : "1.5rem"}; /* 20px, 24px converted to rem */
     height: ${({ size }) =>
-      size === "small" ? "20px" : size === "normal" ? "24px" : "24px"};
+      size === "small"
+        ? "1.25rem"
+        : size === "normal"
+        ? "1.5rem"
+        : "1.5rem"}; /* 20px, 24px converted to rem */
   }
 
   &:hover {

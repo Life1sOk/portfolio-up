@@ -2,19 +2,19 @@ import styled from "styled-components";
 
 export const ImageStyle = styled.div`
   position: relative;
-  width: 542px;
-  aspect-ratio: 1.76/ 1;
+  width: 33.875rem; /* 542px converted to rem */
+  aspect-ratio: 1.76/1;
 
   display: flex;
   align-items: center;
   flex-shrink: 0;
 
   & img {
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px converted to rem */
   }
 
   @media only screen and (max-width: 1088px) {
-    width: 525px;
+    width: 32.8125rem; /* 525px converted to rem */
   }
 
   @media only screen and (max-width: 1044px) {
@@ -31,7 +31,7 @@ export const ImageWhiteFront = styled.div`
 
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px converted to rem */
 
   background-color: ${({ theme }) => theme.shadow.front};
 `;

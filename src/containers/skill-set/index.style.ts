@@ -8,15 +8,14 @@ export const SkillSetWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 34px;
+  gap: 2.125rem;
 `;
 
 export const SkillSetStyle = styled.div`
   width: 100%;
-  font-size: 12px;
 
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.75rem;
 `;

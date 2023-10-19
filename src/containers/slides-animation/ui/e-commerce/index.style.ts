@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 export const Top = styled.div`
   width: 100%;
-  height: 10%;
+  height: 12%;
   border-bottom: 1px solid white;
+
+  padding-bottom: 2%;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4px;
+  gap: 4%;
 `;
 
 export const Middle = styled.div`
