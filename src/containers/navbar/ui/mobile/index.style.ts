@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MobileNavbarStyle = styled.div`
-  min-width: 320px;
+  min-width: 20rem; /* 320px converted to rem */
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.background.main};
@@ -15,7 +15,7 @@ export const TopStyle = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 27px 63px 0 34px;
+  padding: 1.6875rem 3.9375rem 0 2.125rem; /* 27px 63px 0 34px converted to rem */
 
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ export const LinksWrapper = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 17px 48px;
+  padding: 1.0625rem 3rem; /* 17px 48px converted to rem */
 
   display: flex;
   flex-direction: column;
@@ -48,22 +48,22 @@ export const ButtonContainer = styled.div`
 `;
 
 export const LinkWord = styled.div`
-  font-size: 18px;
-  padding: 25px 0;
+  font-size: 1.125rem; /* 18px converted to rem */
+  padding: 1.5625rem 0; /* 25px converted to rem */
   border-bottom: 1px solid transparent;
 
   display: flex;
   align-items: flex-end;
-  gap: 13px;
+  gap: 0.8125rem; /* 13px converted to rem */
 
   .link {
     color: var(--font-color);
     color: ${({ theme }) => theme.color.secondary};
-    font-size: 21px;
+    font-size: 1.3125rem; /* 21px converted to rem */
   }
 
   .number {
-    margin-right: 3px;
+    margin-right: 0.1875rem; /* 3px converted to rem */
     color: ${({ theme }) => theme.title.main};
   }
 
@@ -77,6 +77,6 @@ export const LinkWord = styled.div`
   }
 
   @media only screen and (max-width: 700px) {
-    padding: 18px 0;
+    padding: 1.125rem 0; /* 18px converted to rem */
   }
 `;

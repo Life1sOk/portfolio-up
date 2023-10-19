@@ -8,7 +8,6 @@ export const HomeWrapper = styled.main`
 `;
 
 export const HomeContainer = styled.div`
-  width: 100%;
   max-width: 81.25rem;
   min-width: 20rem; /* 320px converted to rem */
   margin: 0 auto;
