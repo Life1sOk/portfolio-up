@@ -24,8 +24,8 @@ export const MainAbout = styled.section`
 export const FotoWrapper = styled.div`
   position: relative;
 
-  width: 18.75rem;
-  height: 25rem;
+  width: 300px;
+  height: 400px;
   border-radius: 3px;
   overflow: hidden;
   margin-top: 3%;
