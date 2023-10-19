@@ -6,6 +6,7 @@ interface IComponent {
 const ResumeWrapper = ({ lang, children }: IComponent) => {
   return (
     <a
+      title="My Resume"
       href={lang === "ru" ? "/resume/resume-ru.pdf" : "/resume/resume-eng.pdf"}
       target="_blank"
       rel="noopener noreferrer"

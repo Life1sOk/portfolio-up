@@ -6,7 +6,11 @@ interface IComponent {
 }
 
 const Mailto = ({ email, children }: IComponent) => {
-  return <MailLink href={`mailto:${email}`}>{children}</MailLink>;
+  return (
+    <MailLink title="send me email" href={`mailto:${email}`}>
+      {children}
+    </MailLink>
+  );
 };
 
 export default Mailto;

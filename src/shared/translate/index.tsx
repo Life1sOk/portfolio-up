@@ -18,12 +18,17 @@ const Translate = ({ type, toggleAction }: IComponent) => {
 
   return (
     <TranslateStyle type={type}>
-      <Link href="/" locale="en" onClick={() => handleLngToggle()}>
+      <Link title="english toggle" href="/" locale="en" onClick={() => handleLngToggle()}>
         <Picker $state={!!(i18n.resolvedLanguage === "en")} type={type}>
           en
         </Picker>
       </Link>
-      <Link href="/ru" locale="ru" onClick={() => handleLngToggle()}>
+      <Link
+        title="russion roggle"
+        href="/ru"
+        locale="ru"
+        onClick={() => handleLngToggle()}
+      >
         <Picker $state={!!(i18n.resolvedLanguage === "ru")} type={type}>
           ru
         </Picker>
