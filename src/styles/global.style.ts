@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
   /* Weight */
   --font-weight-normal: 500;
   --font-weight-basic: 600;
-  --font-weight-main: 700;    
+  --font-weight-main: 700;
 }
 
 
